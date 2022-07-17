@@ -354,12 +354,12 @@ header button a {
 @media(max-width:767px) {
     .information .box .container {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .information .box .text-box {
         order: 2;
         text-align: center;
-        margin: 0 auto;
     }
 
     .information .image-box {
@@ -459,7 +459,7 @@ header button a {
 @media(max-width:767px) {
     .ready {
         padding-top: 200px;
-        height: 100vh;
+        height: 80vh;
     }
 
     .ready .info-ready h2 {
@@ -595,23 +595,36 @@ footer .contact-footer button a {
     color: white;
     font-weight: 700;
 }
-@media(max-width:767px){
+
+@media(max-width:991px) {
+    footer::before {
+        background-image: url("../images/bg-footer-top-desktop.svg");
+        bottom: 100px;
+    }
+}
+
+@media(max-width:767px) {
     footer::before {
         background-image: url("../images/bg-footer-top-mobile.svg");
         bottom: 50px;
     }
-    footer .info-footer{
+
+    footer .info-footer {
         order: 2;
     }
-    footer .contact-footer{
+
+    footer .contact-footer {
         order: 1;
     }
+
     footer .contact-footer .info-contact p {
         font-size: 14px;
     }
+
     footer .contact-footer button {
-margin-top: 20px;
-margin-left: 140px;
+        margin-top: 20px;
+        margin-left: 140px;
     }
 }
+
 /* end footer */
